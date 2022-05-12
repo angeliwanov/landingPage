@@ -1,0 +1,20 @@
+1. Start by linking your app.js. where should this file go based on your present knowledge? We’ll test some other locations later.
+- <script src="app.js"> added at the end of body, after DOM is loaded.
+
+2. Build out your HTML and at least 4 content sections. 
+- added 4th section in index.html
+
+Take a quick look at all the HTML elements in index.html. Note the values for their id, class, and data attributes. To manipulate the DOM, you'll be using many of the tools and methods you've learned on these elements (and on those that you will create).
+-data-* attribute
+
+Which data structure can you use to store these sections? This data structure can represent all sections for your page, so it might be a good idea to save it to a variable.
+- createDocumentFragment() 
+
+How you would iterate (i.e., loop) over this data structure?
+- querySelectorAll(selectors)
+
+Think about how you can create, say, an unordered list (i.e., bulleted list) in HTML from this structure, and where you be placing that list.
+- function createNavItemHTML(id, name)
+
+Think about how you’ll test whether a section is in the viewport.
+- getBoundingClientRect();
