@@ -63,7 +63,7 @@ function makeActive() {
 function scrollSection (event) {
     if (event.target.nodeName.toLowerCase() == 'a') {
         const section = document.getElementById(event.target.getAttribute('data-id')).offsetTop;
-        window.scrollTo({top: section});
+        window.scrollTo({top: section, behavior: 'smooth'});
     }
 }
 
